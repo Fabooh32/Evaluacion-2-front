@@ -1,0 +1,76 @@
+body{
+    background-color:#f1cba5;
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+}
+.crear_pedido_text{
+    background-color: #d3b290;
+    height: 300px;
+}
+
+.ver_cafes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 25%;
+    height: 250px;
+    margin-top: 30px;
+    
+}
+
+.ver_cafes img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain; /* Esto evita que se deforme */
+    border-radius: inherit; /* Para que la imagen también tenga las esquinas redondeadas */
+    margin: 12%;
+    transition: all 0.9 ease;
+}
+
+.ver_cafes img:hover {
+    transform: scale(1.1); /* Agranda la imagen un 10% */
+    filter: brightness(0.4) blur(2px); /* Le da un toque de luz */
+    cursor: pointer; /* Cambia el cursor a la manito de clic */
+}
+
+.botones_carro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 10px; /* Cambié 25% por 10px para que no parezca un óvalo raro */
+    height: 60px;
+    margin-top: 5px;
+}
+
+.nav-cafe {
+    width: 70%; /* Le damos casi todo el ancho para que los botones se separen */
+    display: flex; /* Activamos flexbox */
+    justify-content: space-between; /* ¡ESTO hace la magia! Izquierda, Centro y Derecha */
+    align-items: center;
+}
+
+/* Estilo para que los botones se vean bien */
+.btn-carro {
+    background-color: #0d6efd; /* Azul Bootstrap */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-carro:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+}

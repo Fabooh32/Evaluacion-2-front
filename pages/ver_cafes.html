@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/ver_cafes.css">
+    <title>Visor de Cafés</title>
 </head>
 <body>
-    <h1>estos son los cafes disponibles</h1>
+    <div class="contenedor-principal">
+        <!-- Sección del nombre arriba -->
+        <div class="form-nombre">
+            <input type="text" id="inputNombre" placeholder="Tu nombre aquí..." class="form-control">
+            <button onclick="guardar()" class="btn-guardar">Guardar</button>
+        </div>
+
+        <!-- Sección del carrusel -->
+        <div class="carrusel-fotos">
+            <button id="prev">❮</button>
+            <div class="visor-container">
+                <img id="visor" src="../resources/cafes/cafe expresso.png" alt="Café">
+            </div>
+            <button id="next">❯</button>
+        </div>
+        <p id="saludo"></p>
+
+    <script src="../java/carrusel.js">hola</script>
 </body>
 </html>

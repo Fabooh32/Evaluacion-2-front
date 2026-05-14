@@ -1,4 +1,5 @@
-body {
+ body {
+
     background-image: url('../resources/fondo2.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,46 +8,61 @@ body {
     margin: 0;
     min-height: 100vh;
     position: relative;
+    align-items: center;
+    justify-items: center;
 }
 
-/* titulo */
 .titulo_index {
     background-image: url('../resources/Gemini_Generated_Image_pjuzrwpjuzrwpjuz.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-
     width: 40vw;
     height: 25vh;
-}
+} 
 
-/* cafe */
-.ver_tipos_de_cafe {
-    background-image: url('../resources/cafe.png');
+
+.ver_tipos_de_cafe, .btn-crear {
+    position: relative; 
+    left: auto;
+    top: auto;
+    transform: none;
+    
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
-    position: absolute;
-    left: 20px;
-    top: 25%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-
-    width: 15vh;
-    height: 15vh;
+    border: none;
     transition: all 0.3s ease;
-
 }
 
-.ver_tipos_de_cafe:hover{
-    border: 4px solid rgba(255, 255, 255, 0.25);
-    transform: translateY(-50%) scale(1.05);
+.ver_tipos_de_cafe {
+    background-image: url('../resources/cafe.png');
+}
+
+.btn-crear {
+    background-image: url('../resources/iconoPedido.png');
+    background-color: #E6DCC8;
+}
+
+/* Animación simplificada para ambos */
+.ver_tipos_de_cafe:hover, .btn-crear:hover {
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
     cursor: pointer;
-    
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* espacio entre botones */
+    height: 100vh; /* los centra respecto al alto de la pantalla */
+    width: 100%;
 }
